@@ -1,12 +1,16 @@
 package com.example.first
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.baselib.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+    override fun getLayoutResId(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun initView() {
+
     }
 }
